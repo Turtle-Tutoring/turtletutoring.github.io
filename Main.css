@@ -2,8 +2,17 @@ html {
     background-color: #1e1e1e;
     font-family: Roboto;
     overflow-x: hidden;
-    color: #90dfaa;
+    color: #90fdaa;
 }
+
+.navbar {
+    position: sticky;
+    top: 0;
+    background-color: #90fdaa;
+    width: 100%;
+    height: 75px;
+    z-index: 10;
+  }
 
 #titlearea {
     display: flex;
@@ -19,7 +28,7 @@ html {
 
 #subjecttitlearea {
     position: absolute;
-    background-color: #90dfaa;
+    background-color: #90fdaa;
     width: 100%;
     height: 150px;
     margin-top: -100px;
@@ -49,6 +58,7 @@ html {
     transition: 0.5s;
     padding: 25px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+    border: 1px solid #90fdaa;
 }
 
 .card {
@@ -75,7 +85,7 @@ html {
 .cardbutton {
     margin-top: 50px;
     background-color: #1e1e1e;
-    color: #90dfaa;
+    color: #90fdaa;
     border-radius: 15px;
     width: 200px;
     height: 150px;
@@ -84,11 +94,12 @@ html {
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
     padding: 25px;
     transition: 0.5s;
+    border: 1px solid #90fdaa;
 }
 
 .cardbutton:hover {
-    border: 10px solid #90dfaa;
-    box-shadow: 0px 0px 20px #90dfaa;
+    border: 1px solid #90fdaa;
+    box-shadow: 0px 0px 20px #90fdaa;
     transform: scale(1.1);
     transition: 0.5s;
 }
@@ -96,7 +107,7 @@ html {
 .button {
     outline: none;
     border: none;
-    background-color: #90dfaa;
+    background-color: #90fdaa;
     padding: 15px;
     border-radius: 15px;
     text-align: center;
