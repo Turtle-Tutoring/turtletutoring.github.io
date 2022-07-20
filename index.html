@@ -1,142 +1,117 @@
-<!DOCTYPE html>
-<html>
-<link rel="stylesheet" href="Main.css"></link>
-<link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+html {
+    background-color: #1e1e1e;
+    font-family: Roboto;
+    overflow-x: hidden;
+    color: #90dfaa;
+}
 
-<head>
-    <title>TurtleTutoring</title>
-</head>
+#titlearea {
+    display: flex;
+    background-color: transparent;
+    width: 35%;
+    padding: 0% 5%;
+    height: 700px;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+    flex-flow: column;
+}
 
-<body id="body" class="body">
+#subjecttitlearea {
+    position: absolute;
+    background-color: #90dfaa;
+    width: 100%;
+    height: 150px;
+    margin-top: -100px;
+    z-index: -1;
+}
 
-    <section>
-        <div style="display: flex;">
-            <div id="titlearea">
-                <h1 style="font-size: 50px;">TurtleTutoring</h1>
-                <p style="line-height: 40px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae congue mauris rhoncus aenean vel.</p>
-            </div>
-            <div style="display: flex; justify-content: center; align-items: center; background-color: #90fdaa; width: 60%">
-                <!-- <img style="width: 700px; height: 700px;" src="Images/TurtleTutoring.png"> -->
-            </div>
-        </div>
-    </section>
+#spacing {
+    width: 25px;
+    height: 25px;
+}
 
-    <section>
-        <div style="display: flex; justify-content: center;">
-            <div class="cardholder">
-                <div style="height: 400px; width: 400px; line-height: 40px; background-color: #1e1e1e;" class="cardnohover">
-                    <h1><u>Who Are We</u></h1>
-                    <p>TurtleTutoring has one goal and that is to allow everyone to have the resources they need to succeed. We have amazing tutors specialized in many Middle School and High School subjects and courses to get you ahead of your class and prepared. All of our classes and tutoring services are  100% free of charge!</p>
-                </div>
-            </div>
-            <div id="spacing"></div>
-            
-        </div>
-    </section>
+#pageend {
+    height: 25px;
+}
 
-    <div id="spacing"></div>
-    <div id="spacing"></div>
+.cardholder {
+    display: flex;
+    justify-content: center;
+}
 
-    <section>
-        <div style="display: flex; background-color: #90fdaa; padding-bottom: 50px; align-items: center; justify-content: center; width: 100%;">
-            <div class="cardholder">
-                <div class="card">
-                    <h1 style="text-align: center;"><u>Step 1:</u></h1>
-                    <div class="buttonholder">
-                        <button onclick="location.href='https://discord.gg/sfEQkrQj';" class="button">Join our discord</button>
-                    </div>
-                </div>
-                <div id="spacing"></div>
-                
-                <img style="margin-top: 100px; height: 100px; width: 100px;"src="Images/Arrow.png">
+.cardnohover {
+    margin-top: 50px;
+    background-color: #1e1e1e;
+    border-radius: 15px;
+    width: 200px;
+    height: 150px;
+    transition: 0.5s;
+    padding: 25px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+}
 
-                <div id="spacing"></div>
-                <div class="card">
-                    <h1 style="text-align: center;"><u>Step 2:</u></h1>
-                    <p style="text-align: center;">Pick subjects that you need help with.</p>
-                </div>
-                <div id="spacing"></div>
+.card {
+    margin-top: 50px;
+    background-color: #1e1e1e;
+    border-radius: 15px;
+    width: 200px;
+    height: 150px;
+    transition: 0.5s;
+    padding: 25px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+}
 
-                <img style="margin-top: 100px;height: 100px; width: 100px;"src="Images/Arrow.png">
+.card:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
 
-                <div id="spacing"></div>
-                <div class="card">
-                    <h1 style="text-align: center;"><u>Step 3:</u></h1>
-                    <p style="text-align: center;">Have fun!!!</p>
-                </div>
-            </div>
-        </div>
-    </section>
+.buttonholder {
+    display: flex;
+    justify-content: center;
+}
 
-    <h1 style="color: #1e1e1e; text-align: center; margin-top: 100px;">Pick a subject:</h1>
+.cardbutton {
+    margin-top: 50px;
+    background-color: #1e1e1e;
+    color: #90dfaa;
+    border-radius: 15px;
+    width: 200px;
+    height: 150px;
+    outline: none;
+    border: none;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+    padding: 25px;
+    transition: 0.5s;
+}
 
-    <div class="cardholder">
-        <div class="buttonholder">
-            <button class="cardbutton">
-                
-                <h1 style="text-align: center;">Math</h1>
-            </button>
-        </div>
+.cardbutton:hover {
+    border: 1px solid #90dfaa;
+    box-shadow: 0px 0px 20px #90dfaa;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
 
-        <div id="spacing"></div>
+.button {
+    outline: none;
+    border: none;
+    background-color: #90dfaa;
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
+    color: #1e1e1e;
+    font-family: Roboto;
+    transition: 0.5s;
+}
 
-        <div class="buttonholder">
-            <button class="cardbutton">
-                <h1 style="text-align: center;">English</h1>
-            </button>
-        </div>
+.button:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
 
-        <div id="spacing"></div>
-
-        <div class="buttonholder">
-            <button class="cardbutton">
-                <h1 style="text-align: center;">Science</h1>
-            </button>
-        </div>
-    </div>
-
-    <div class="cardholder">
-        <div class="buttonholder">
-            <button class="cardbutton">
-                <h1 style="text-align: center;">History</h1>
-            </button>
-        </div>
-
-        <div id="spacing"></div>
-
-        <div class="buttonholder">
-            <button class="cardbutton">
-                <h1 style="text-align: center;">Language</h1>
-            </button>
-        </div>
-
-        <div id="spacing"></div>
-
-        <div class="buttonholder">
-            <button class="cardbutton">
-                <h1 style="text-align: center;">Computer Science</h1>
-            </button>
-        </div>
-    </div>
-
-    <div class="cardholder">
-        <div class="card">
-            <h1 style="text-align: center;">About</h1>
-            <div class="buttonholder">
-                <button onclick="about();"class="button">About Us</button>
-            </div>
-        </div>
-    </div>
-    <div id="pageend"></div>
-
-</html>
-<script src="../Main.js"></script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-235185676-1%22%3E"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-235185676-1');
-</script>
+.text {
+    margin-top: 100px;
+    text-align: center;
+    line-height: 50px;
+}
