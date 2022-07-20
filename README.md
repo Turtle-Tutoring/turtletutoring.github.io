@@ -1,2 +1,0 @@
-# turtletutoring.github.io
-Education
