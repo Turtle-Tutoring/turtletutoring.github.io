@@ -10,18 +10,24 @@
 
 <body id="body" class="body">
 
-    <div style="position: relative; height: 100%;">
-        <div class="navbar"></div>
+    <div class="navbar">
+        <button style="position:absolute; margin-left: 25px; margin-top: 10px; background-color: #1e1e1e; padding: 0px;" class="button"><img style="display:flex; justify-content: start; height: 50px;" src="Images/TurtleTutoringNavbar.png"></button>
+        <div style=" width: 100%; height: 75px; display: flex; align-items: center; justify-content: end;">
+            <button style="background-color: #1e1e1e; color: #90fdaa;" class="button">Home</button>
+            <div id="spacing"></div>
+            <button style="background-color: #1e1e1e; color: #90fdaa;" class="button">About</button>
+            <div id="spacing"></div>
+        </div>
     </div>
 
     <section>
         <div style="display: flex;">
             <div id="titlearea">
                 <h1 style="font-size: 50px;">TurtleTutoring</h1>
-                <p style="line-height: 40px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae congue mauris rhoncus aenean vel.</p>
+                <p style="line-height: 40px;">TurtleTutoring is a <u>non-profit organization</u> that has one goal and that is to allow everyone to have the resources they need to succeed. We have amazing tutors specialized in many middle school and high school subjects and courses to get you ahead of your class and prepared. All of our classes and tutoring services are <u>100% free of charge!</u></p>
             </div>
             <div style="display: flex; justify-content: center; align-items: center; background-color: #90fdaa; width: 60%">
-                <img style="width: 700px; height: 700px;" src="TurtleTutoring.png">
+                <img style="width: 700px; height: 700px;" src="Images/TurtleTutoring.png">
             </div>
         </div>
     </section>
@@ -38,6 +44,7 @@
             <div id="spacing"></div>
             
             <div>
+                <h1 style="text-align: center; margin-top: 25px;">Select a subject to view its syllabus:</h1>
                 <div class="cardholder">
                     <div class="buttonholder">
                         <button class="cardbutton">
@@ -93,8 +100,11 @@
         <div style="display: flex; justify-content: center;">
             <div class="cardholder">
                 <div style="height: 400px; width: 400px; line-height: 40px; background-color: #1e1e1e;" class="cardnohover">
-                    <h1><u>Who Are We</u></h1>
-                    <p>TurtleTutoring has one goal and that is to allow everyone to have the resources they need to succeed. We have amazing tutors specialized in many Middle School and High School subjects and courses to get you ahead of your class and prepared. All of our classes and tutoring services are  100% free of charge!</p>
+                    <h1 style="text-align: center;"><u>Discord</u></h1>
+                    <p>Join our discord to stay on top of everything and get updates on classes and timings.</p>
+                    <div class="buttonholder">
+                        <button onclick="location.href='https://discord.gg/sfEQkrQj';" class="button">Join Discord</button>
+                    </div>
                 </div>
             </div>
             <div id="spacing"></div>
@@ -103,17 +113,11 @@
     </section>
 
     <div id="spacing"></div>
-    <div class="buttonholder">
-        <button onclick="location.href='https://discord.gg/sfEQkrQj';" class="button">Join our discord</button>
-    </div>
     <div id="spacing"></div>
 
     <section>
         <div style="display: flex; background-color: #90fdaa; padding-bottom: 50px; align-items: center; justify-content: center; width: 100%;"></div>
     </section>
-
-    <h1 style="color: #1e1e1e; text-align: center; margin-top: 100px;">Pick a subject:</h1>
-
     
     <div id="pageend"></div>
 
