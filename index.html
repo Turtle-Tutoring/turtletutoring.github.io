@@ -2,50 +2,67 @@
 <html>
 <link rel="stylesheet" href="Main.css"></link>
 <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <head>
     <title>TurtleTutoring</title>
 </head>
 
 <body id="body" class="body">
-
-    <div class="navbar">
-        <button style="position:absolute; margin-left: 25px; margin-top: 10px; background-color: #1e1e1e; padding: 0px;" class="button"><img style="display:flex; justify-content: start; height: 50px;" src="Images/TurtleTutoringNavbar.png"></button>
-        <div style=" width: 100%; height: 75px; display: flex; align-items: center; justify-content: end;">
-            <button style="background-color: #1e1e1e; color: #90fdaa;" class="button">Home</button>
-            <div id="spacing"></div>
-            <button style="background-color: #1e1e1e; color: #90fdaa;" class="button">About</button>
-            <div id="spacing"></div>
+    <div class="sticky">
+        <div class="navbar">
+            <button style="position:absolute; margin-left: 25px; margin-top: 10px; background-color: transparent; padding: 10px; border: none; box-shadow: none;" class="button"><img style="display:flex; justify-content: start; height: 40px;" src="Images/TurtleTutoringNavbar.png"></button>
+            <div style=" width: 100%; height: 75px; display: flex; align-items: center; justify-content: end;">
+                <button class="button">Home</button>
+                <div id="spacing"></div>
+                <button class="button">About</button>
+                <div id="spacing"></div>
+            </div>
         </div>
     </div>
 
     <section>
         <div style="display: flex;">
             <div id="titlearea">
-                <h1 style="font-size: 50px;">TurtleTutoring</h1>
-                <p style="line-height: 40px;">TurtleTutoring is a <u>non-profit organization</u> that has one goal and that is to allow everyone to have the resources they need to succeed. We have amazing tutors specialized in many middle school and high school subjects and courses to get you ahead of your class and prepared. All of our classes and tutoring services are <u>100% free of charge!</u></p>
+                <h1 style="font-size: 50px;"><u>Our Purpose</u></h1>
+                <p style="line-height: 40px;">TurtleTutoring is a <u>non-profit organization</u> that has one goal in mind and that is to allow everyone to have the resources they need to succeed. We have amazing tutors specialized in many middle school and high school subjects and courses to get you ahead of your class and prepared. All of our classes and tutoring services are <u>100% free of charge!</u></p>
             </div>
-            <div style="display: flex; justify-content: center; align-items: center; background-color: #90fdaa; width: 60%">
-                <img style="width: 700px; height: 700px;" src="Images/TurtleTutoring.png">
+            <div style="display: flex; justify-content: center; align-items: center; background-color: transparent; width: 60%">
+                <img style="width: 500px; height: 500px;" src="Images/TurtleTutoringLogo.png">
             </div>
         </div>
     </section>
 
+    <div id="spacing"></div>
+
+    <div style="display: flex;">
+        <div style="display: flex; align-items: center; justify-content: center; width: 60%; border: 1px solid #4E6B35; margin-left: 50px;">
+            <h1>Image Here</h1>
+        </div>
+        <div id="sidetext">
+            <h1 style="font-size: 50px;">Join Our Discord</h1>
+            <p style="line-height: 40px;">The TurtleTutoring discord is a great place to receive updates and new information on classes and scheduling!</p>
+            <div class="buttonholder">
+                <button onclick="discord();" class="button">
+                    <h1>Join Discord</h1>
+                </button>
+            </div>
+        </div>
+    </div>
+
     <section>
         <div style="display: flex; align-items:center; justify-content: center;">
-            <div class="cardholder">
-                <div style="height: 400px; width: 400px; line-height: 40px; background-color: #1e1e1e;" class="cardnohover">
-                    <h1 style="text-align: center;"><u>What Do We Offer</u></h1>
-                    <p>TurtleTutoring offers in depth help with various subjects ranging from 1st grade all the way to 12th grade.</p>
-                </div>
-            </div>
             <div id="spacing"></div>
             <div id="spacing"></div>
             
+            
+
             <div>
+
                 <h1 style="text-align: center; margin-top: 25px;">Select a subject to view its syllabus:</h1>
                 <div class="cardholder">
+
                     <div class="buttonholder">
                         <button class="cardbutton">
                             <h1 style="text-align: center;">Math</h1>
@@ -68,7 +85,7 @@
                         </button>
                     </div>
                 </div>
-            
+
                 <div class="cardholder">
                     <div class="buttonholder">
                         <button class="cardbutton">
@@ -92,37 +109,41 @@
                         </button>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
 
-    <section>
-        <div style="display: flex; justify-content: center;">
-            <div class="cardholder">
-                <div style="height: 400px; width: 400px; line-height: 40px; background-color: #1e1e1e;" class="cardnohover">
-                    <h1 style="text-align: center;"><u>Discord</u></h1>
-                    <p>Join our discord to stay on top of everything and get updates on classes and timings.</p>
+                <div class="cardholder">
                     <div class="buttonholder">
-                        <button onclick="location.href='https://discord.gg/sfEQkrQj';" class="button">Join Discord</button>
+                        
                     </div>
                 </div>
             </div>
-            <div id="spacing"></div>
-            
         </div>
     </section>
 
+    <section>
+        
+    </section>
+
+    <div id="spacing"></div>
+    <div id="spacing"></div>
     <div id="spacing"></div>
     <div id="spacing"></div>
 
     <section>
-        <div style="display: flex; background-color: #90fdaa; padding-bottom: 50px; align-items: center; justify-content: center; width: 100%;"></div>
+        <div style="display: flex; background-color: #2C3333; padding-bottom: 50px; align-items: center; width: 100%; height: 250px;">
+            <div id="spacing"></div>
+            <div>
+                <div id="spacing"></div>
+                <button class="button">Contact Us</button>
+                <div id="spacing"></div>
+                <button class="button">Donate</button>
+                <div id="spacing"></div>
+                <p>Copyright TurtleTutoring</p>
+            </div>
+        </div>
     </section>
-    
-    <div id="pageend"></div>
 
 </html>
-<script src="../Main.js"></script>
+<script src="Main.js"></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-235185676-1%22%3E"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
