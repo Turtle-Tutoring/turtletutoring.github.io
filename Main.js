@@ -9,3 +9,7 @@ function about() {
 function math() {
     document.location = "../Subjects/Math/Math.html";
 }
+
+function discord() {
+    location.href="https://discord.gg/sfEQkrQj";
+}
