@@ -1,15 +1,38 @@
 html {
-    background-color: #1e1e1e;
-    font-family: Roboto;
+    background-image: linear-gradient(#395B64, #83BD75, #4E944F);
+    font-family: Lato;
     overflow-x: hidden;
-    color: #90fdaa;
+    color: #E7F6F2;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+  
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 75px;
+    z-index: 10;
 }
 
 .navbar {
-    position: sticky;
-    top: 0;
-    background-color: #90fdaa;
-    width: 100%;
+    background-color: #2C3333;
+    margin-top: -11px;
     height: 75px;
     z-index: 10;
   }
@@ -19,12 +42,24 @@ html {
     background-color: transparent;
     width: 35%;
     padding: 0% 5%;
-    height: 700px;
+    height: 600px;
     align-items: center;
     justify-content: center;
     z-index: -1;
     flex-flow: column;
 }
+
+#sidetext {
+    display: flex;
+    background-color: transparent;
+    width: 35%;
+    padding: 0% 5%;
+    height: 600px;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+}
+
 
 #subjecttitlearea {
     position: absolute;
@@ -49,33 +84,35 @@ html {
     justify-content: center;
 }
 
-.cardnohover {
+/* .cardnohover {
     margin-top: 50px;
-    background-color: #1e1e1e;
+    background-color: #B5D359;
     border-radius: 15px;
     width: 200px;
     height: 150px;
     transition: 0.5s;
     padding: 25px;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
-    border: 1px solid #90fdaa;
+    box-shadow: 0px 0px 20px #00000075;
+    border: 2px solid #4E6B35;
 }
 
 .card {
     margin-top: 50px;
-    background-color: #1e1e1e;
+    background-color: #B5D359;
     border-radius: 15px;
     width: 200px;
     height: 150px;
     transition: 0.5s;
     padding: 25px;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 0px 20px #00000075;
+    border: 2px solid #4E6B35;
 }
 
 .card:hover {
+    box-shadow: 0px 0px 20px #000000;
     transform: scale(1.1);
     transition: 0.5s;
-}
+} */
 
 .buttonholder {
     display: flex;
@@ -84,36 +121,37 @@ html {
 
 .cardbutton {
     margin-top: 50px;
-    background-color: #1e1e1e;
-    color: #90fdaa;
+    background-color: #4E944F;
+    color: #E7F6F2;
+    font-family: Lato;
     border-radius: 15px;
     width: 200px;
     height: 150px;
     outline: none;
     border: none;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 0px 20px #00000075;
     padding: 25px;
     transition: 0.5s;
-    border: 1px solid #90fdaa;
+    border: 2px solid #E7F6F2;
 }
 
 .cardbutton:hover {
-    border: 1px solid #90fdaa;
-    box-shadow: 0px 0px 20px #90fdaa;
+    box-shadow: 0px 0px 20px #000000;
     transform: scale(1.1);
     transition: 0.5s;
 }
 
 .button {
+    background-color: transparent;
+    color: #E7F6F2;
+    font-family: Lato;
+    border-radius: 15px;
     outline: none;
     border: none;
-    background-color: #90fdaa;
+    box-shadow: 0px 0px 20px #00000075;
     padding: 15px;
-    border-radius: 15px;
-    text-align: center;
-    color: #1e1e1e;
-    font-family: Roboto;
     transition: 0.5s;
+    border: 2px solid #E7F6F2;
 }
 
 .button:hover {
