@@ -1,7 +1,6 @@
 html {
     background-image: linear-gradient(#395B64, #83BD75, #4E944F);
     font-family: Lato;
-    overflow-x: hidden;
     color: #E7F6F2;
 }
 
@@ -84,7 +83,7 @@ body {
     justify-content: center;
 }
 
-/* .cardnohover {
+/* /* .cardnohover {
     margin-top: 50px;
     background-color: #B5D359;
     border-radius: 15px;
@@ -94,25 +93,51 @@ body {
     padding: 25px;
     box-shadow: 0px 0px 20px #00000075;
     border: 2px solid #4E6B35;
-}
+} */
 
 .card {
     margin-top: 50px;
-    background-color: #B5D359;
+    background-color: #2C3333;
+    color: #E7F6F2;
+    font-family: Lato;
     border-radius: 15px;
-    width: 200px;
+    width: 250px;
     height: 150px;
-    transition: 0.5s;
-    padding: 25px;
+    outline: none;
+    border: none;
     box-shadow: 0px 0px 20px #00000075;
-    border: 2px solid #4E6B35;
+    padding: 25px;
+    transition: 0.5s;
+    border: 2px solid #E7F6F2;
 }
 
 .card:hover {
     box-shadow: 0px 0px 20px #000000;
     transform: scale(1.1);
     transition: 0.5s;
-} */
+}
+
+.maincard {
+    margin-top: 50px;
+    background-color: #2C3333;
+    color: #E7F6F2;
+    font-family: Lato;
+    border-radius: 15px;
+    width: 250px;
+    height: 400px;
+    outline: none;
+    border: none;
+    box-shadow: 0px 0px 20px #00000075;
+    padding: 25px;
+    transition: 0.5s;
+    border: 2px solid #E7F6F2;
+}
+
+.maincard:hover {
+    box-shadow: 0px 0px 20px #000000;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
 
 .buttonholder {
     display: flex;
@@ -121,7 +146,7 @@ body {
 
 .cardbutton {
     margin-top: 50px;
-    background-color: #4E944F;
+    background-color: #2C3333;
     color: #E7F6F2;
     font-family: Lato;
     border-radius: 15px;
@@ -142,7 +167,7 @@ body {
 }
 
 .button {
-    background-color: transparent;
+    background-color: #2C3333;
     color: #E7F6F2;
     font-family: Lato;
     border-radius: 15px;
@@ -163,4 +188,16 @@ body {
     margin-top: 100px;
     text-align: center;
     line-height: 50px;
+}
+
+.pfpholder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pfp {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
 }
