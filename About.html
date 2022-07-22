@@ -3,7 +3,7 @@
 <link rel="stylesheet" href="Main.css"></link>
 <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@500&display=swap" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <head>
@@ -13,11 +13,11 @@
 <body id="body" class="body">
     <div class="sticky">
         <div class="navbar">
-            <button style="position:absolute; margin-left: 25px; margin-top: 10px; background-color: transparent; padding: 10px; border: none; box-shadow: none;" class="button"><img style="display:flex; justify-content: start; height: 40px;" src="Images/TurtleTutoringNavbar.png"></button>
-            <div style=" width: 100%; height: 75px; display: flex; align-items: center; justify-content: end;">
-                <button class="button">Home</button>
+            <button onclick="home();" style="position:absolute; margin-left: 25px; margin-top: 10px; background-color: transparent; padding: 10px; border: none; box-shadow: none;" class="button"><img style="display:flex; justify-content: start; height: 40px;" src="Images/TurtleTutoringNavbar.png"></button>
+            <div style="width: 100%; height: 75px; display: flex; align-items: center; justify-content: end;">
+                <button onclick="home();" class="button">Home</button>
                 <div id="spacing"></div>
-                <button class="button">About</button>
+                <button onclick="about();" class="button">About</button>
                 <div id="spacing"></div>
             </div>
         </div>
@@ -26,7 +26,7 @@
     <section>
         <div style="display: flex; align-items:center; justify-content: center;">
             <div>
-                <h1 style="text-align: center; margin-top: 25px; font-size: 50px;"><u>Founders</u></h1>
+                <h1 style="text-align: center; margin-top: 25px; font-size: 50px;"><u>Executive Board</u></h1>
                 <div class="cardholder">
                     <div class="maincard">
                         <div class="pfpholder">
@@ -36,7 +36,7 @@
                         <p style="text-align: center; font-size: 10px; margin-top: -15px;">Co-Founder of TurtleTutoring</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Cursus mattis molestie a iaculis at erat pellentesque adipiscing. At quis risus sed vulputate odio ut. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. Elit eget gravida cum sociis natoque.</p>
                     </div>
-            
+
                     <div id="spacing"></div>
             
                     <div class="maincard">
@@ -47,9 +47,20 @@
                         <p style="text-align: center; font-size: 10px; margin-top: -15px;">Co-Founder of TurtleTutoring</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Cursus mattis molestie a iaculis at erat pellentesque adipiscing. At quis risus sed vulputate odio ut. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. Elit eget gravida cum sociis natoque.</p>
                     </div>
+
+                    <div id="spacing"></div>
+
+                    <div class="maincard">
+                        <div class="pfpholder">
+                            <img class="pfp" src="Images/PFP/Adhviklal.png">
+                        </div>
+                        <h1 style="text-align: center;"><u>Adhviklal Thoppe</u></h1>
+                        <p style="text-align: center; font-size: 10px; margin-top: -15px;">Web Developer & Lead Computer Science Director</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Cursus mattis molestie a iaculis at erat pellentesque adipiscing. At quis risus sed vulputate odio ut. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. Elit eget gravida cum sociis natoque.</p>
+                    </div>
                 </div>
 
-                <h1 style="text-align: center; margin-top: 25px; font-size: 50px;"><u>Teachers</u></h1>
+                <h1 style="text-align: center; margin-top: 25px; font-size: 50px;"><u>Tutors</u></h1>
                 <div class="cardholder">
                     <div class="card">
                         <div class="pfpholder">
@@ -92,13 +103,25 @@
     <section>
         <div style="display: flex; background-color: #2C3333; padding-bottom: 50px; align-items: center; width: 100%; height: 250px;">
             <div id="spacing"></div>
-            <div>
+            <div style="display: flex; background-color: transparent; width: 30%; flex-flow: column;">
                 <div id="spacing"></div>
-                <button class="button">Contact Us</button>
                 <div id="spacing"></div>
-                <button class="button">Donate</button>
                 <div id="spacing"></div>
-                <p>Copyright TurtleTutoring</p>
+                <a href="" style="color: #E7F6F2">Contact Us</a>
+                <div id="spacing"></div>
+                <a href="" style="color: #E7F6F2">Donate</a>
+                <div id="spacing"></div>
+                <a href="Privacy.html" style="color: #E7F6F2">Privacy Policy</a>
+                <div id="spacing"></div>
+                <p>Copyright © 2022 TurtleTutoring. All rights reserved.</p>
+            </div>
+            <div style="display: flex; justify-content: right; background-color: transparent; width: 70%">
+                <img style="width: 50px; height: 50px;" src="Images/InstagramLogo.png">
+                <div id="spacing"></div>
+                <img style="width: 50px; height: 50px;" src="Images/LinkedInLogo.png">
+                <div id="spacing"></div>
+                <img style="width: 50px; height: 50px;" src="Images/FacebookLogo.png">
+                <div id="spacing"></div>
             </div>
         </div>
     </section>
