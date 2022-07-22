@@ -1,13 +1,13 @@
 function home() {
-    document.location = "../Home/Home.html";
+    document.location = "index.html";
 }
 
 function about() {
-    document.location = "../About/About.html";
+    document.location = "About.html";
 }
 
 function math() {
-    document.location = "../Subjects/Math/Math.html";
+    document.location = "Math.html";
 }
 
 function discord() {
