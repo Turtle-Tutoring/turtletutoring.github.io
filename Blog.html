@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="Main.css"></link>
+<link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@500&display=swap" rel="stylesheet">
+<link rel="icon" type="image/x-icon" href="Images/TurtleTutoringLogo.png">
+
+
+<head>
+    <title>TurtleTutoring</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Turtle Tutoring is a registered non-profit organization that provides free tutoring to 
+    allow everyone to have the resources that they need to succeed. Our panel of tutors specialize in tutoring 
+    middle school to high school subjects ranging from honors and AP level classes 
+    in the fields of mathematics, english, science, history, and world languages. 
+    Take the initiative to join TurtleTutoring to bridge the gap or accelerate your educational journey!">
+    <meta name="keywords" content="Turtle, Tutoring, TurtleTutoring, Math, English, Science, History, Language, Computer Science">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body id="body" class="body">
+    <div class="sticky">
+        <div class="navbar">
+            <button onclick="home();" style="position:absolute; margin-left: 25px; margin-top: 10px; background-color: transparent; padding: 10px; border: none; box-shadow: none;" class="button"><img style="display:flex; justify-content: start; height: 40px;" src="Images/TurtleTutoringNavbar.png"></button>
+            <div style="width: 100%; height: 75px; display: flex; align-items: center; justify-content: end;">
+                <button onclick="home();" class="button">Home</button>
+                <div id="spacing"></div>
+                <button onclick="team();" class="button">Team</button>
+                <div id="spacing"></div>
+                <button onclick="blog();" class="button">Blog</button>
+                <div id="spacing"></div>
+            </div>
+        </div>
+    </div>
+
+    <section>
+        <div style="display: flex; flex-flow: column; margin-left: 100px; line-height: 40px;">
+            <h1 style="font-size: 50px;">Latest Blogs</h1>
+            <button class="blogcard" style="text-align: left;">
+                <h1>Title</h1>
+                <p>Description</p>
+                <small>Date, Author</small>
+            </button>
+
+            <button class="blogcard" style="text-align: left;">
+                <h1>Title</h1>
+                <p>Description</p>
+                <small>Date, Author</small>
+            </button>
+
+            <button class="blogcard" style="text-align: left;">
+                <h1>Title</h1>
+                <p>Description</p>
+                <small>Date, Author</small>
+            </button>
+        </div>
+    </section>
+
+    <div id="spacing"></div>
+    <div id="spacing"></div>
+    <div id="spacing"></div>
+    <div id="spacing"></div>
+
+    <section>
+        <div style="display: flex; background-color: #2C3333; padding-bottom: 50px; align-items: center; width: 100%; height: 250px;">
+            <div id="spacing"></div>
+            <div style="display: flex; background-color: transparent; width: 30%; flex-flow: column;">
+                <div id="spacing"></div>
+                <div id="spacing"></div>
+                <div id="spacing"></div>
+                <a href="" style="color: #E7F6F2">Contact Us</a>
+                <div id="spacing"></div>
+                <a href="" style="color: #E7F6F2">Donate</a>
+                <div id="spacing"></div>
+                <a href="Privacy.html" style="color: #E7F6F2">Privacy Policy</a>
+                <div id="spacing"></div>
+                <p>Copyright © 2022 TurtleTutoring. All rights reserved.</p>
+            </div>
+            <div style="display: flex; justify-content: right; background-color: transparent; width: 70%">
+                <button onclick="instagram();" class="plainbutton"><img style="width: 50px; height: 50px;" src="Images/InstagramLogo.png"></button>
+                <div id="spacing"></div>
+                <button onclick="linkedin();" class="plainbutton"><img style="width: 50px; height: 50px;" src="Images/LinkedInLogo.png"></button>
+                <div id="spacing"></div>
+                <button onclick="facebook();" class="plainbutton"><img style="width: 50px; height: 50px;" src="Images/FacebookLogo.png"></button>
+                <div id="spacing"></div>
+                <button onclick="twitter();" class="plainbutton"><img style="width: 50px; height: 50px;" src="Images/TwitterLogo.png"></button>
+                <div id="spacing"></div>
+            </div>
+        </div>
+    </section>
+</html>
+<script src="Main.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-235185676-1%22%3E"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-235185676-1');
+</script>
