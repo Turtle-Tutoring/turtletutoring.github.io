@@ -5,11 +5,18 @@
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Lato:wght@500&display=swap" rel="stylesheet">
 <link rel="icon" type="image/x-icon" href="Images/TurtleTutoringLogo.png">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
 <head>
     <title>TurtleTutoring</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Turtle Tutoring is a registered non-profit organization that provides free tutoring to 
+    allow everyone to have the resources that they need to succeed. Our panel of tutors specialize in tutoring 
+    middle school to high school subjects ranging from honors and AP level classes 
+    in the fields of mathematics, english, science, history, and world languages. 
+    Take the initiative to join TurtleTutoring to bridge the gap or accelerate your educational journey!">
+    <meta name="keywords" content="Turtle, Tutoring, TurtleTutoring, Math, English, Science, History, Language, Computer Science">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body id="body" class="body">
@@ -19,7 +26,9 @@
             <div style="width: 100%; height: 75px; display: flex; align-items: center; justify-content: end;">
                 <button onclick="home();" class="button">Home</button>
                 <div id="spacing"></div>
-                <button onclick="about();" class="button">About</button>
+                <button onclick="team();" class="button">Team</button>
+                <div id="spacing"></div>
+                <button onclick="blog();" class="button">Blog</button>
                 <div id="spacing"></div>
             </div>
         </div>
@@ -28,7 +37,7 @@
     <section>
         <div style="display: flex;">
             <div id="titlearea">
-                <h1 style="font-size: 50px;"><u>Our Purpose</u></h1>
+                <h1 style="font-size: 50px;">Our Purpose</h1>
                 <p style="line-height: 40px;">Turtle Tutoring is a <u>registered non-profit organization</u> that provides <u>free tutoring</u> to 
                     allow everyone to have the resources that they need to succeed. Our panel of tutors specialize in tutoring 
                     <u>middle school to high school subjects</u> ranging from honors and AP level classes 
@@ -49,7 +58,7 @@
             <iframe src="https://discord.com/widget?id=997608874729275493&theme=light" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
         </div>
         <div id="slimsidetext">
-            <h1 style="font-size: 50px;"><u>Join Our Discord</u></h1>
+            <h1 style="font-size: 50px;">Join Our Discord</h1>
             <p style="line-height: 40px;">The TurtleTutoring discord is a great place to receive updates and new information on classes and scheduling!</p>
             <div class="buttonholder">
                 <button onclick="discord();" class="button">
@@ -152,11 +161,13 @@
                 <p>Copyright © 2022 TurtleTutoring. All rights reserved.</p>
             </div>
             <div style="display: flex; justify-content: right; background-color: transparent; width: 70%">
-                <img style="width: 50px; height: 50px;" src="Images/InstagramLogo.png">
+                <button onclick="instagram();" class="plainbutton"><img style="width: 50px; height: 50px;" src="Images/InstagramLogo.png"></button>
                 <div id="spacing"></div>
-                <img style="width: 50px; height: 50px;" src="Images/LinkedInLogo.png">
+                <button onclick="linkedin();" class="plainbutton"><img style="width: 50px; height: 50px;" src="Images/LinkedInLogo.png"></button>
                 <div id="spacing"></div>
-                <img style="width: 50px; height: 50px;" src="Images/FacebookLogo.png">
+                <button onclick="facebook();" class="plainbutton"><img style="width: 50px; height: 50px;" src="Images/FacebookLogo.png"></button>
+                <div id="spacing"></div>
+                <button onclick="twitter();" class="plainbutton"><img style="width: 50px; height: 50px;" src="Images/TwitterLogo.png"></button>
                 <div id="spacing"></div>
             </div>
         </div>
