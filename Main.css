@@ -1,101 +1,260 @@
-<!DOCTYPE html>
-<html>
-<link rel="stylesheet" href="Main.css"></link>
-<link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Lato:wght@500&display=swap" rel="stylesheet">
-<link rel="icon" type="image/x-icon" href="Images/TurtleTutoringLogo.png">
+html {
+    background-image: linear-gradient(#395B64, #83BD75, #4E944F);
+    font-family: Lato;
+    color: #E7F6F2;
+    scroll-behavior: smooth;
+}
 
+body {
+    margin: 0;
+    padding: 0;
+    animation: fadeInAnimation ease 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
 
-<head>
-    <title>TurtleTutoring</title>
-    <meta charset="UTF-8">
-    <meta name="description" content="Turtle Tutoring is a registered non-profit organization that provides free tutoring to 
-    allow everyone to have the resources that they need to succeed. Our panel of tutors specialize in tutoring 
-    middle school to high school subjects ranging from honors and AP level classes 
-    in the fields of mathematics, english, science, history, and world languages. 
-    Take the initiative to join TurtleTutoring to bridge the gap or accelerate your educational journey!">
-    <meta name="keywords" content="Turtle, Tutoring, TurtleTutoring, Math, English, Science, History, Language, Computer Science">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
 
-<body id="body" class="body">
-    <div class="sticky">
-        <div class="navbar">
-            <button onclick="home();" style="position:absolute; margin-left: 25px; margin-top: 10px; background-color: transparent; padding: 10px; border: none; box-shadow: none;" class="button"><img style="display:flex; justify-content: start; height: 40px;" src="Images/TurtleTutoringNavbar.png"></button>
-            <div style="width: 100%; height: 75px; display: flex; align-items: center; justify-content: end;">
-                <button onclick="home();" class="button">Home</button>
-                <div id="spacing"></div>
-                <button onclick="team();" class="button">Team</button>
-                <div id="spacing"></div>
-                <button onclick="blog();" class="button">Blog</button>
-                <div id="spacing"></div>
-            </div>
-        </div>
-    </div>
+.sticky {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 75px;
+    z-index: 10;
+}
 
-    <section>
-        <div style="display: flex; flex-flow: column; margin-left: 100px; line-height: 40px;">
-            <h1 style="font-size: 50px;">Latest Blogs</h1>
-            <button class="blogcard" style="text-align: left;">
-                <h1>Title</h1>
-                <p>Description</p>
-                <small>Date, Author</small>
-            </button>
+.navbar {
+    background-color: #2C3333;
+    margin-top: -11px;
+    height: 75px;
+    z-index: 10;
+  }
 
-            <button class="blogcard" style="text-align: left;">
-                <h1>Title</h1>
-                <p>Description</p>
-                <small>Date, Author</small>
-            </button>
+#titlearea {
+    display: flex;
+    background-color: transparent;
+    width: 35%;
+    padding: 0% 5%;
+    height: 600px;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+    flex-flow: column;
+}
 
-            <button class="blogcard" style="text-align: left;">
-                <h1>Title</h1>
-                <p>Description</p>
-                <small>Date, Author</small>
-            </button>
-        </div>
-    </section>
+#slimsidetext {
+    display: flex;
+    background-color: transparent;
+    width: 35%;
+    padding: 0% 5%;
+    height: 600px;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+}
 
-    <div id="spacing"></div>
-    <div id="spacing"></div>
-    <div id="spacing"></div>
-    <div id="spacing"></div>
+#widesidetext {
+    display: flex;
+    background-color: transparent;
+    width: 55%;
+    padding: 0% 5%;
+    height: 600px;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+}
 
-    <section>
-        <div style="display: flex; background-color: #2C3333; padding-bottom: 50px; align-items: center; width: 100%; height: 250px;">
-            <div id="spacing"></div>
-            <div style="display: flex; background-color: transparent; width: 30%; flex-flow: column;">
-                <div id="spacing"></div>
-                <div id="spacing"></div>
-                <div id="spacing"></div>
-                <a href="" style="color: #E7F6F2">Contact Us</a>
-                <div id="spacing"></div>
-                <a href="" style="color: #E7F6F2">Donate</a>
-                <div id="spacing"></div>
-                <a href="Privacy.html" style="color: #E7F6F2">Privacy Policy</a>
-                <div id="spacing"></div>
-                <p>Copyright © 2022 TurtleTutoring. All rights reserved.</p>
-            </div>
-            <div style="display: flex; justify-content: right; background-color: transparent; width: 70%">
-                <button onclick="instagram();" class="plainbutton"><img style="width: 50px; height: 50px;" src="Images/InstagramLogo.png"></button>
-                <div id="spacing"></div>
-                <button onclick="linkedin();" class="plainbutton"><img style="width: 50px; height: 50px;" src="Images/LinkedInLogo.png"></button>
-                <div id="spacing"></div>
-                <button onclick="facebook();" class="plainbutton"><img style="width: 50px; height: 50px;" src="Images/FacebookLogo.png"></button>
-                <div id="spacing"></div>
-                <button onclick="twitter();" class="plainbutton"><img style="width: 50px; height: 50px;" src="Images/TwitterLogo.png"></button>
-                <div id="spacing"></div>
-            </div>
-        </div>
-    </section>
-</html>
-<script src="Main.js"></script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-235185676-1%22%3E"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+#subjecttitlearea {
+    position: absolute;
+    background-color: #90fdaa;
+    width: 100%;
+    height: 150px;
+    margin-top: -100px;
+    z-index: -1;
+}
 
-  gtag('config', 'UA-235185676-1');
-</script>
+#spacing {
+    width: 25px;
+    height: 25px;
+}
+
+#pageend {
+    height: 25px;
+}
+
+.cardholder {
+    display: flex;
+    justify-content: center;
+}
+
+/* /* .cardnohover {
+    margin-top: 50px;
+    background-color: #B5D359;
+    border-radius: 15px;
+    width: 200px;
+    height: 150px;
+    transition: 0.5s;
+    padding: 25px;
+    box-shadow: 0px 0px 20px #00000075;
+    border: 2px solid #4E6B35;
+} */
+
+.card {
+    margin-top: 50px;
+    background-color: #2C3333;
+    color: #E7F6F2;
+    font-family: Lato;
+    border-radius: 15px;
+    width: 250px;
+    height: 150px;
+    outline: none;
+    border: none;
+    box-shadow: 0px 0px 20px #00000075;
+    padding: 25px;
+    transition: 0.5s;
+    border: 2px solid #E7F6F2;
+}
+
+.card:hover {
+    box-shadow: 0px 0px 20px #000000;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.blogcard {
+    margin-top: 50px;
+    background-color: #2C3333;
+    color: #E7F6F2;
+    font-family: Lato;
+    border-radius: 15px;
+    width: 1250px;
+    height: 150px;
+    outline: none;
+    border: none;
+    box-shadow: 0px 0px 20px #00000075;
+    padding: 25px;
+    transition: 0.5s;
+    border: 2px solid #E7F6F2;
+}
+
+.blogcard:hover {
+    box-shadow: 0px 0px 20px #000000;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.maincard {
+    margin-top: 50px;
+    background-color: #2C3333;
+    color: #E7F6F2;
+    font-family: Lato;
+    border-radius: 15px;
+    width: 250px;
+    height: 400px;
+    outline: none;
+    border: none;
+    box-shadow: 0px 0px 20px #00000075;
+    padding: 25px;
+    transition: 0.5s;
+    border: 2px solid #E7F6F2;
+}
+
+.maincard:hover {
+    box-shadow: 0px 0px 20px #000000;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.buttonholder {
+    display: flex;
+    justify-content: center;
+}
+
+.cardbutton {
+    margin-top: 50px;
+    background-color: #2C3333;
+    color: #E7F6F2;
+    font-family: Lato;
+    border-radius: 15px;
+    width: 200px;
+    height: 150px;
+    outline: none;
+    border: none;
+    box-shadow: 0px 0px 20px #00000075;
+    padding: 25px;
+    transition: 0.5s;
+    border: 2px solid #E7F6F2;
+    cursor: pointer;
+}
+
+.cardbutton:hover {
+    box-shadow: 0px 0px 20px #000000;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.button {
+    background-color: #2C3333;
+    color: #E7F6F2;
+    font-family: Lato;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    box-shadow: 0px 0px 20px #00000075;
+    padding: 15px;
+    transition: 0.5s;
+    border: 2px solid #E7F6F2;
+    cursor: pointer;
+}
+
+.button:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.plainbutton {
+    background: transparent;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.plainbutton:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.text {
+    margin-top: 100px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.pfpholder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pfp {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.subjectinfo {
+    display: flex;
+    border: 10px solid #E7F6F2;
+    border-radius: 15px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
